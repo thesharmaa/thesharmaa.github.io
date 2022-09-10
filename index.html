@@ -5,42 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
       #top {
         text-align: center;
-    
+        margin-top: 1px;
         margin-bottom: 30px;
-        background-color: #c9e2fc;
+        background-color: #013a6b;
+        background-image: -webkit-linear-gradient(
+          30deg,
+          #55a0be 25%,
+          #9fd3e7 10%
+        );
       }
       #main {
         display: flex;
         gap: 30%;
-        height: 720px;
-        margin-top: 1%;
+        height: 741px;
+
         justify-content: space-evenly;
-        /* border: 1px solid red; */
+        border: 1px solid #9fd3e7;
       }
       #nav {
         display: flex;
-        height:10%;
+        height: 10%;
         justify-content: end;
         align-items: center;
-        background-color: #278aae;
+        background-color: #0776a1;
       }
+
       #image {
-        /* border: 1px solid black; */
         display: grid;
         align-items: center;
       }
-      #text{
-        /* border: 1px solid red; */
-        display: grid;
-        justify-content: center;
-        align-items: center;
+      #image > img {
+        margin: auto;
+
+        margin-left: 20%;
       }
-      #nav > h3 {
-        font-size: 25px;
-        margin-right: 20px;
+      #text {
+        margin-right: 10%;
+      }
+      #nav > h3:hover {
+        color: white;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+      #text > h1:nth-child(1) {
+        margin-top: 300px;
         font-family: Verdana, Arial, Helvetica, sans-serif;
+      }
+      #text > h1:nth-child(2){
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+      } 
+      #text > h3 {
+        margin-top: 10px;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+      }
+
+      #nav > h3 {
+        font-size: 22px;
+        margin-right: 20px;
+
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+      }
+      #nav>h3>a{
+        text-decoration: none;
+        color: black;
+
+      }
+      #nav>h3>a:hover{
+        text-decoration: none;
+        color:white;
+        
       }
       @media all and (min-width: 340px) and (max-width: 768px) {
         #nav > h3 {
@@ -48,51 +87,102 @@
           margin-right: 12px;
           margin-top: 1;
         }
-        #main{
-            width: 90%;
-            margin: auto;
-            margin-top: 3%;
-
-            display: grid;
-            align-items: center;
+        #nav > h3 {
+          display: grid;
+          justify-content: space-between;
+          margin: auto;
         }
-        #main>#image>#img1{
-            width:80%;
-            margin: auto;
+        #main {
+          width: 90%;
+          margin: auto;
+          margin-top: 1%;
+          display: block;
         }
-        #main>#text {
-            margin-top: -80%;
-            width:100%
+        #main > #image > #img1 {
+          width: 80%;
+          margin: auto;
+        }
+        #main > #image {
+          margin-top: 15%;
+        }
+        #main > #text {
+          margin-top: -80%;
+          width: 100%;
+        }
+        #text > h1 {
+          font-size: 20px;
+        }
+        #text > h3 {
+          font-size: 15px;
         }
       }
       @media all and (min-width: 767px) and (max-width: 1024px) {
         #nav > h3 {
-          font-size: 17.5px;
+          font-size: 20px;
           margin-right: 16px;
         }
+        #nav > h3 {
+          display: grid;
+          justify-content: space-between;
+          margin: auto;
+        }
+        #main {
+          width: 90%;
+          margin: auto;
+          margin-top: 3%;
+          display: block;
+      
+        }
+        #main > #image {
+          margin-top: 10%;
+          height: 20%;
+        }
+        #main > #image > #img1 {
+          width: 40%;
+          margin: auto;
+        }
+        #text{
+          width:60%;
+          margin: auto;
+          text-align: center;
+         
+        }
+      }
+      #text > h1 > span {
+        color: #086a91;
+      }
+      #top>h3{
+        color: grey;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        margin: auto;
+        font-size: 12px;
+     
       }
     </style>
   </head>
   <body>
     <div id="nav">
-        <h3>Home</h3>
-        <h3>About</h3>
-        <h3>Projects</h3>
-        <h3>Contact Me</h3>
-      </div>
+      <h3><a href="index.html">Home</a></h3> 
+      <h3><a href="about.html">About Me</a></h3> 
+      <h3><a href="index.html">Projects</a></h3> 
+      <h3><a href="index.html">Contact Me</a></h3> 
+    </div>
     <div id="top">
       <div id="main">
         <div id="image">
           <img id="img1" src="img/aman.png" alt="" />
         </div>
         <div id="text">
-          <h1>Hi, I'm Aman Sharma. A Full Stack Java Developer.</h1>
+          <h1>Hi, I'm <span>Aman Sharma</span>.</h1> 
+          <h1>A Java Backend Developer.</h1>
           <h3>
-            I'm a Full Stack Java Developer, I love to create beautiful and
+            I'm a Java Backend Developer, I love to create beautiful and
             functional websites.
           </h3>
         </div>
       </div>
+      <h3>Designed and build by Aman Sharma, 2022 ALl rights reserved</h2>
     </div>
+   <hr>
   </body>
 </html>
