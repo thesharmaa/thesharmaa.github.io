@@ -15,9 +15,9 @@
         margin-bottom: 30px;
         background-color: #013a6b;
         background-image: -webkit-linear-gradient(
-          30deg,
-          #55a0be 25%,
-          #9fd3e7 10%
+         35deg,
+          #8EE4AF 45%,
+          #EDF5E1 10%
         );
       }
       #main {
@@ -26,18 +26,20 @@
         height: 741px;
 
         justify-content: space-evenly;
-        border: 1px solid #9fd3e7;
+        border: 1px solid #EDF5E1;
       }
       #nav {
         display: flex;
         height: 10%;
         justify-content: end;
         align-items: center;
-        background-color: #0776a1;
+        background-color: #5CDB95;
+     
       }
 
       #image {
         display: grid;
+       
         align-items: center;
       }
       #image > img {
@@ -46,6 +48,7 @@
         margin-left: 20%;
       }
       #text {
+      
         margin-right: 10%;
       }
       #nav > h3:hover {
@@ -55,13 +58,16 @@
       }
       #text > h1:nth-child(1) {
         margin-top: 300px;
+        color:#05386B;
         font-family: Verdana, Arial, Helvetica, sans-serif;
       }
       #text > h1:nth-child(2){
+        color:#05386B;
         font-family: Verdana, Arial, Helvetica, sans-serif;
       } 
       #text > h3 {
         margin-top: 10px;
+        color:#05386B;
         font-family: Verdana, Arial, Helvetica, sans-serif;
       }
 
@@ -73,7 +79,7 @@
       }
       #nav>h3>a{
         text-decoration: none;
-        color: black;
+        color:#05386B;
 
       }
       #nav>h3>a:hover{
@@ -81,7 +87,7 @@
         color:white;
         
       }
-      @media all and (min-width: 340px) and (max-width: 768px) {
+      @media all and (min-width: 340px) and (max-width: 420px) {
         #nav > h3 {
           font-size: 15px;
           margin-right: 12px;
@@ -106,7 +112,7 @@
           margin-top: 15%;
         }
         #main > #text {
-          margin-top: -80%;
+          margin-top: -70%;
           width: 100%;
         }
         #text > h1 {
@@ -149,7 +155,8 @@
         }
       }
       #text > h1 > span {
-        color: #086a91;
+        color:#05386B;
+       
       }
       #top>h3{
         color: grey;
@@ -158,10 +165,65 @@
         font-size: 12px;
      
       }
+      @media all and (min-width: 1025px) and (max-width: 1305px){
+           #main{
+          
+            display: block;
+           }
+           #main>#text{
+            margin: auto;
+            margin-top: -14%;
+           }
+           #main>#text>h3 {
+            font-size: 18px;
+           }
+           #image{
+            margin-top: 7%;
+           }
+           #image>#img1{
+            width: 30%;
+            margin: auto;
+           }
+      }
+      @media all and (min-width: 420px) and (max-width: 768px){
+        #main{
+          
+          display: block;
+         }
+         #nav > h3 {
+          font-size: 20px;
+          margin-right: 16px;
+        }
+        #nav > h3 {
+          display: grid;
+          justify-content: space-between;
+          margin: auto;
+        }
+         #main>#text{
+            margin: auto;
+            margin-top: -14%;
+           }
+           #main>#text>h3 {
+            font-size: 18px;
+           }
+           #main>#text>h1 {
+            font-size: 25px;
+           }
+           #image{
+            margin-top: 7%;
+           }
+           #image>#img1{
+            width: 50%;
+            margin: auto;
+           }
+      }
+     
     </style>
   </head>
   <body>
+  
     <div id="nav">
+      
       <h3><a href="index.html">Home</a></h3> 
       <h3><a href="about.html">About Me</a></h3> 
       <h3><a href="index.html">Projects</a></h3> 
@@ -181,8 +243,9 @@
           </h3>
         </div>
       </div>
-      <h3>Designed and build by Aman Sharma, 2022 ALl rights reserved</h2>
+      <h3>Designed and build by Aman Sharma, 2022 All rights reserved</h2>
     </div>
-   <hr>
+ 
   </body>
 </html>
+<script src="index.js"></script>
