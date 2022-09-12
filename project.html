@@ -52,7 +52,14 @@
         width: 100%;
         height: 100%;
       }
+      #p2 > #image:hover {
+  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+#p1 > #image:hover {
+  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
       @media all and (min-width: 767px) and (max-width: 1024px) {
+        
         #p1 {
           display: block;
         }
@@ -128,7 +135,7 @@
         padding: 10px 20px;
 
         border: 1px solid rgb(248, 243, 243);
-
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
         cursor: pointer;
 
         font-size: 15px;
@@ -274,7 +281,7 @@
       #nav > h3 {
         font-size: 22px;
         margin-right: 20px;
-
+   
         font-family: Verdana, Arial, Helvetica, sans-serif;
       }
       #nav > h3 > a {
@@ -304,7 +311,7 @@
       <h3><a href="index.html">Home</a></h3>
       <h3><a href="about.html">About Me</a></h3>
       <h3><a href="project.html">Projects</a></h3>
-      <h3><a href="index.html">Contact Me</a></h3>
+      <h3><a href="contact.html">Contact Me</a></h3>
     </div>
     <div id="main">
       <h1>Projects</h1>
