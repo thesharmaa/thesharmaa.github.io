@@ -1,7 +1,14 @@
 .about-stats {
     padding-bottom: 4rem;
   }
- 
+  .about-stats .stat-title{
+    /* border: 1px solid red; */
+    padding: 30px;
+  }
+  #time .stat-title{
+   
+    padding: 30px;
+  }
   .about-stats .progress-bars {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -143,7 +150,9 @@
     }
   }
   @media all and (min-width: 340px) and (max-width: 950px) {
+    
     .progress-bar img {
+
       box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   }
     
@@ -175,7 +184,7 @@
     }
   }
   #details {
-    margin-top: -600px;
+    margin-top: -670px;
   }
   
   .about-stats h4 {
@@ -186,7 +195,7 @@
    
   }
   #mains {
-    margin-top: 50px;
+    margin-top: 150px;
     
   }
   #main {
@@ -202,19 +211,19 @@
   }
 
   .progress-bar img {
-    width: 100px;
+    width: 80px;
     margin: auto;
     border-radius: 10px;
   }
     .progress-bar:first-child img{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     margin: auto;
   }
   .progress-bar p {
     text-align: center;
     color: #174471;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold;
   }
 

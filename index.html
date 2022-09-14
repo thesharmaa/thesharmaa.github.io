@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="project.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
       * {
@@ -25,7 +27,7 @@
         height: 741px;
 
         justify-content: space-evenly;
-        border: 1px solid #EDF5E1;
+        /* border: 1px solid #EDF5E1; */
       }
       #nav {
         display: flex;
@@ -142,6 +144,9 @@ width:400px;
         color:#05386B;
        
       }
+      #top{
+        margin-top: 70px;
+      }
       #top>h3{
         color: grey;
         font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -229,8 +234,8 @@ width:400px;
 
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
-  background-color: #edf5e1;
-  color: black;
+  /* background-color: #edf5e1;
+  color: black; */
 }
 
 /* Style the active link (or home/logo) */
@@ -246,13 +251,14 @@ font-size: 20px;
   <body>
   
     <div class="topnav">
-      <a href="#home" class="active" style="color:#05386B ;">AM<span style="color:white">AN</span>
+      <a href="index.html" class="active" style="color:#05386B ;font-size: 30px;">AM<span style="color:white">AN</span>
       </a>
       <!-- Navigation links (hidden by default) -->
       <div id="myLinks">
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
+        <a href="#top">Home</a>
+        <a href="#mains">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact-me">Contact Me</a>
       </div>
       <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -275,6 +281,7 @@ font-size: 20px;
       </div>
       
     </div>
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray;  width:90%; margin: auto;margin-top:90px">
     <div id="mains">
       <div id="main">
         <h1>About Me</h1>
@@ -290,7 +297,7 @@ font-size: 20px;
         <button id="btn"><a href="img/Aman Sharma Resume.pdf" download="Aman Sharma Resume">Download CV</a></button>
       </div>
     </div>
-    <hr style="height:2px;border-width:0;color:gray;background-color:gray;  width:70%; margin: auto;margin-top:40px">
+   
     <div id="skills">
       <div class="about-stats">
         <h4 class="stat-title">My Skills</h4>
@@ -324,7 +331,7 @@ font-size: 20px;
       </div>
     </div>
    
-    <hr style="height:2px;border-width:0;color:gray;background-color:gray;  width:70%; margin: auto;margin-top:40px">
+   
     <div id="time">
       <h4 class="stat-title">My Timeline</h4>
       <div class="timeline">
@@ -359,7 +366,148 @@ font-size: 20px;
         </div>
       </div>
     </div>
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray;  width:90%; margin: auto;margin-top:40px">
+    <!-- fffff -->
+    <div id="projects">
+      <h1>Projects</h1>
+      <div id="p1">
+        <div id="text">
+          <h2>NDTV - Clone Project</h2>
+          <h3>Tools : HTML | CSS | Javascript</h3>
+          <h4>Features</h4>
+          <li>
+            A collaborative project built by a team of 5,executed in a week.
+          </li>
+          <li>Users can read, post, search, and sort news.</li>
+          <div id="buttons">
+        <button><a href="https://ndtv-hot-wood-7345.netlify.app/" target="_blank">Deployed Link</a></button>
+            <button><a href="https://github.com/kieransahoo/hot-wood-7345" target="_blank">Github Link</a></button>
+          </div>
+        </div>
+        <div id="image">
+          <img src="img/ndtv.png" alt="" />
+        </div>
+      </div>
+      <div id="p2">
+        <div id="text">
+          <h2>Bangoodd - Clone Project</h2>
+          <h3>Tools : HTML | CSS | Javascript</h3>
+          <h4>Features</h4>
+          <li>
+            A collaborative project built by a team of 5,executed in a week.
+          </li>
+          <li>Users can Signup, Login.</li>
+          <li>Users can Add product to Cart.</li>
+          <li>Users can Sort and filter the products.</li>
+          <li>Users can Checkout and can do Payment.</li>
+          <div id="buttons">
+           <button><a href="https://admirable-shortbread-cc3902.netlify.app/" target="_blank">Deployed Link</a> </button></a> 
+            <button><a href="https://github.com/brahmandeepak/7supremacy-masai" target="_blank">Github Link</a></button>
+          </div>
+        </div>
+        <div id="image">
+          <img src="img/bangoodd.png" alt="" />
+        </div>
+      </div>
+
+    </div>
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray;  width:90%; margin: auto;margin-top:40px">
+<!-- contact-form -->
+<div id="contact-me">
+<div class="contact-container">
+  <div class="main-title">
+    <h2>Contact <span>Me</span><span class="bg-text"></span></h2>
+  </div>
+  <div class="contact-content-con">
+    <div class="left-contact">
+      
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="icon">
+
+            <span>Location</span>
+          </div>
+          <p>: Jamshedpur, Jharkhand, India</p>
+        </div>
+        <div class="contact-item">
+          <div class="icon">
+       
+            <span>Email</span>
+          </div>
+          <p>
+            <span>: sharmaamanjsr@gmail.com</span>
+          </p>
+        </div>
+        <div class="contact-item">
+          <div class="icon">
+         
+            <span>Education</span>
+          </div>
+          <p>
+            <span>: College Of Engineering Bhubaneswar</span>
+          </p>
+        </div>
+        <div class="contact-item">
+          <div class="icon">
+         
+            <span>Mobile Number</span>
+          </div>
+          <p>
+            <span>: 9337403736</span>
+          </p>
+        </div>
+        <div class="contact-item">
+          <div class="icon">
+        
+            <span>Languages</span>
+          </div>
+          <p>
+            <span>: Hindi, English</span>
+          </p>
+        </div>
+      </div>
+
+    </div>
+    <div class="right-contact">
+      <form action="" class="contact-form" action="mailto:sharmaamanjsr@gmail.com"  method="POST"
+      enctype="text/plain">
+   
+
+       
+        <div class="input-control i-c-2">
+            
+          <input type="text" required placeholder="YOUR NAME" />
+       
+          <input type="email" required placeholder="YOUR EMAIL" />
+        </div>
+        <div class="input-control">
+          
+          <input type="text" required placeholder="ENTER SUBJECT" />
+        </div>
+        <div class="input-control">
+          
+          <textarea
+            name=""
+            id=""
+            cols="15"
+            rows="8"
+            placeholder="Message Here..."
+          ></textarea>
+        </div>
+        <div class="submit-btn">
+          <a  class="main-btn">
+            <button type="submit" value="Send">Submit</button>
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+</div>
+</div>
+
   </body>
+  <h3 style="color:#05386B; font-size: 15px;margin-bottom: 10px;">Designed and build by Aman Sharma, 2022 All rights reserved</h2>
 </html>
 <script src="index.js"></script>
 <script>
