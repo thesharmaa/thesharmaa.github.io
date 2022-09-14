@@ -45,7 +45,7 @@
       }
       #image > img {
         margin: auto;
-width:400px;
+width:550px;
         margin-left: 20%;
       }
       #text {
@@ -61,24 +61,24 @@ width:400px;
         font-size: 40px;
         margin-top: 300px;
         color:#05386B;
-        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-family: 'Roboto Mono', monospace;
       }
       #text > h1:nth-child(2){
         color:#05386B;
         font-size: 28px;
-        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-family: 'Roboto Mono', monospace;
       } 
       #text > h3 {
         margin-top: 10px;
         color:#05386B;
-        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-family: 'Roboto Mono', monospace;
       }
 
       #nav > h3 {
         font-size: 22px;
         margin-right: 20px;
 
-        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-family: 'Roboto Mono', monospace;
       }
       #nav>h3>a{
         text-decoration: none;
@@ -149,7 +149,7 @@ width:400px;
       }
       #top>h3{
         color: grey;
-        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-family: 'Roboto Mono', monospace;
         margin: auto;
         font-size: 15px;
      
@@ -193,23 +193,25 @@ width:400px;
            #image{
             margin-top: 7%;
            }
+ 
            #image>#img1{
-            width: 50%;
+            width: 60%;
             margin: auto;
            }
       }
       .topnav {
   overflow: hidden;
   background-color: #8ee4af;
-  position: relative;
+
+
 }
 
-/* Hide the links inside the navigation menu (except for logo/home) */
+
 .topnav #myLinks {
   display: none;
 }
 
-/* Style navigation menu links */
+
 
 .topnav a {
   color: white;
@@ -218,27 +220,34 @@ width:400px;
   font-size: 17px;
   font-weight: bold;
   display: block;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 .topnav a span{
   color: white;
 }
-/* Style the hamburger menu */
+
 .topnav a.icon {
   background: #04AA6D;
   display: block;
+
+
+
   position: absolute;
   right: 0;
   top: 0;
 }
 
-/* Add a grey background color on mouse-over */
-.topnav a:hover {
-  /* background-color: #edf5e1;
-  color: black; */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-/* Style the active link (or home/logo) */
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+
+
+
+
 .active {
   background-color: #04AA6D;
   color: white;
@@ -246,6 +255,7 @@ width:400px;
 #text>h3{
 font-size: 20px;
 }
+
     </style>
   </head>
   <body>
@@ -253,16 +263,17 @@ font-size: 20px;
     <div class="topnav">
       <a href="index.html" class="active" style="color:#05386B ;font-size: 30px;">AM<span style="color:white">AN</span>
       </a>
-      <!-- Navigation links (hidden by default) -->
+    
       <div id="myLinks">
         <a href="#top">Home</a>
         <a href="#mains">About Me</a>
         <a href="#projects">Projects</a>
         <a href="#contact-me">Contact Me</a>
       </div>
-      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+ 
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
+       
+        <i class='fa fa-bars fa-2x'></i>
       </a>
     </div>
     <div id="top">
@@ -520,3 +531,4 @@ if (x.style.display === "block") {
 }
 }
 </script>
+<script src="sticky.js"></script>

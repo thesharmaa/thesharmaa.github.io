@@ -25,13 +25,13 @@
     margin-bottom: 10px;
     color: #05386b;
 
-    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Mono', monospace;
   }
   .about-stats .progress-bars .progress-bar .progress-con {
     display: flex;
     align-items: center;
     color: #05386b;
-    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Mono', monospace;
     font-size: 14px;
   }
   .about-stats .progress-bars .progress-bar .progress-con .prog-text {
@@ -69,14 +69,14 @@
     font-size: 1.3rem;
     font-weight: 600;
     color: #295e93;
-    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Mono', monospace;
   }
   .timeline .timeline-item h5 span {
     color: var(--color-grey-2);
     font-weight: 500;
     font-size: 1.2rem;
     color: #05386b;
-    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Mono', monospace;
   }
   .timeline .timeline-item p {
     color: #05386b;
@@ -103,7 +103,7 @@
   display: block;
   font-size: 15px;
   margin: auto;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-family: 'Roboto Mono', monospace;
     padding: 20px 50px;
     border-radius: 20px;
     margin-top: 30px;
@@ -124,7 +124,7 @@
     font-size: 28px;
     font-weight: bolder;
     color: #174471;
-    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Mono', monospace;
   }
   #time {
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -189,7 +189,7 @@
   
   .about-stats h4 {
     text-align: center;
-    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Mono', monospace;
     color: #174471;
     font-size: 27px;
    
@@ -199,13 +199,13 @@
     
   }
   #main {
-    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Mono', monospace;
     color: #174471;
     font-size: 32px;
     
   }
   #details > h3 {
-    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Mono', monospace;
     color: #174471;
     font-size: 20px;
   }
