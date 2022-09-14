@@ -4,23 +4,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
       * {
         margin: 0;
         padding: 0;
       }
-  
-      #top {
-        text-align: center;
-        margin-top: 1px;
-        margin-bottom: 30px;
-        background-color: #013a6b;
-        background-image: -webkit-linear-gradient(
+  body{
+      background-image: -webkit-linear-gradient(
          35deg,
-          #8EE4AF 45%,
+          #8EE4AF 55%,
           #EDF5E1 10%
         );
-      }
+  }
+      
       #main {
         display: flex;
         gap: 30%;
@@ -91,16 +89,7 @@ width:400px;
         
       }
       @media all and (min-width: 340px) and (max-width: 420px) {
-        #nav > h3 {
-          font-size: 15px;
-          margin-right: 12px;
-          margin-top: 1;
-        }
-        #nav > h3 {
-          display: grid;
-          justify-content: space-between;
-          margin: auto;
-        }
+       
         #main {
           width: 90%;
           margin: auto;
@@ -126,15 +115,7 @@ width:400px;
         }
       }
       @media all and (min-width: 767px) and (max-width: 1024px) {
-        #nav > h3 {
-          font-size: 20px;
-          margin-right: 16px;
-        }
-        #nav > h3 {
-          display: grid;
-          justify-content: space-between;
-          margin: auto;
-        }
+       
         #main {
           width: 90%;
           margin: auto;
@@ -193,15 +174,7 @@ width:400px;
           
           display: block;
          }
-         #nav > h3 {
-          font-size: 20px;
-          margin-right: 16px;
-        }
-        #nav > h3 {
-          display: grid;
-          justify-content: space-between;
-          margin: auto;
-        }
+        
          #main>#text{
             margin: auto;
             margin-top: -14%;
@@ -220,17 +193,71 @@ width:400px;
             margin: auto;
            }
       }
-     
+      .topnav {
+  overflow: hidden;
+  background-color: #8ee4af;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  display: block;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.topnav a span{
+  color: white;
+}
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: #04AA6D;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #edf5e1;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+#text>h3{
+font-size: 20px;
+}
     </style>
   </head>
   <body>
   
-    <div id="nav">
-      
-      <h3><a href="index.html">Home</a></h3> 
-      <h3><a href="about.html">About Me</a></h3> 
-      <h3><a href="project.html">Projects</a></h3> 
-      <h3><a href="contact.html">Contact Me</a></h3> 
+    <div class="topnav">
+      <a href="#home" class="active" style="color:#05386B ;">AM<span style="color:white">AN</span>
+      </a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
     <div id="top">
       <div id="main">
@@ -246,9 +273,102 @@ width:400px;
           </h3>
         </div>
       </div>
-      <h3>Designed and build by Aman Sharma, 2022 All rights reserved</h2>
+      
     </div>
- 
+    <div id="mains">
+      <div id="main">
+        <h1>About Me</h1>
+      </div>
+      <div id="details">
+        <h3>
+          Dedicated and solution-oriented efficient Full Stack Java Developer
+          with knowledge in Data Structures and Algorithms. Adapt at motivating
+          self and others. Passionate about coding and keen to learn new
+          technologies.
+        </h3>
+        
+        <button id="btn"><a href="img/Aman Sharma Resume.pdf" download="Aman Sharma Resume">Download CV</a></button>
+      </div>
+    </div>
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray;  width:70%; margin: auto;margin-top:40px">
+    <div id="skills">
+      <div class="about-stats">
+        <h4 class="stat-title">My Skills</h4>
+        <div class="progress-bars">
+          <div class="progress-bar">
+            <p class="prog-title">JAVA</p>
+            <img src="img/download (4).png" alt="" />
+          </div>
+          <div class="progress-bar">
+            <p class="prog-title">HTML</p>
+            <img src="img/download (2).png" alt="" />
+          </div>
+          <div class="progress-bar">
+            <p class="prog-title">Javascript</p>
+            <img src="img/download.png" alt="" />
+          </div>
+
+          <div class="progress-bar">
+            <p class="prog-title">CSS</p>
+            <img src="img/download (1).png" alt="" />
+          </div>
+          <div class="progress-bar">
+            <p class="prog-title">Github</p>
+            <img src="img/download (5).png" alt="" />
+          </div>
+          <div class="progress-bar">
+            <p class="prog-title">DSA</p>
+            <img src="img/downloads.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray;  width:70%; margin: auto;margin-top:40px">
+    <div id="time">
+      <h4 class="stat-title">My Timeline</h4>
+      <div class="timeline">
+        <div class="timeline-item">
+          <p class="tl-duration">2022 - present</p>
+          <h5>Full Stack Java Developer<span> - Masai School</span></h5>
+        </div>
+        <div class="timeline-item">
+          <p class="tl-duration">2019</p>
+          <h5>Hand Injection Moulding<span> - CTTC, Bhubaneswar</span></h5>
+        </div>
+        <div class="timeline-item">
+          <p class="tl-duration">2018</p>
+          <h5>Leaf Spring Analysis<span> - Tata Motors, Jamshedpur</span></h5>
+        </div>
+        <div class="timeline-item">
+          <p class="tl-duration">2016 - 2017</p>
+          <h5>Senior Secondary<span> - Shiksha Niketan</span></h5>
+        </div>
+        <div class="timeline-item">
+          <p class="tl-duration">2017 - 2021</p>
+          <h5>
+            Mechanical Engineering<span>
+              - College Of Engineering Bhubaneswar</span
+            >
+          </h5>
+        </div>
+
+        <div class="timeline-item">
+          <p class="tl-duration">2014 - 2015</p>
+          <h5>Intermediate<span> - Shiksha Niketan</span></h5>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
 <script src="index.js"></script>
+<script>
+  function myFunction() {
+var x = document.getElementById("myLinks");
+if (x.style.display === "block") {
+  x.style.display = "none";
+} else {
+  x.style.display = "block";
+}
+}
+</script>

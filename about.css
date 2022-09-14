@@ -1,0 +1,221 @@
+.about-stats {
+    padding-bottom: 4rem;
+  }
+ 
+  .about-stats .progress-bars {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-top: 50px;
+  }
+  .about-stats .progress-bars .progress-bar {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-stats .progress-bars .progress-bar .prog-title {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #05386b;
+
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+  }
+  .about-stats .progress-bars .progress-bar .progress-con {
+    display: flex;
+    align-items: center;
+    color: #05386b;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+  .about-stats .progress-bars .progress-bar .progress-con .prog-text {
+    color: var(--color-grey-2);
+  }
+
+  .about-stats .progress-bars .progress-bar .progress-con .progress span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #05386b;
+    transition: all 0.4s ease-in-out;
+    width: 60%;
+  }
+  
+
+  .timeline {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-top: 50px;
+    padding-bottom: 3rem;
+  }
+  .timeline .timeline-item {
+    position: relative;
+    padding-left: 3rem;
+
+    border-left: 1px solid var(--color-grey-5);
+  }
+
+  .timeline .timeline-item h5 {
+    padding: 1rem 0;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #295e93;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+  }
+  .timeline .timeline-item h5 span {
+    color: var(--color-grey-2);
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #05386b;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+  }
+  .timeline .timeline-item p {
+    color: #05386b;
+    font-size: 16px;
+  }
+  #main {
+    margin: auto;
+  
+    text-align: center;
+  }
+  #details > h3 {
+    text-align: center;
+
+    line-height: 20px;
+  }
+  #btn:hover{
+   
+    font-weight: bolder;
+ 
+  }
+ #btn {
+   
+   cursor: pointer;
+  display: block;
+  font-size: 15px;
+  margin: auto;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+    padding: 20px 50px;
+    border-radius: 20px;
+    margin-top: 30px;
+    border: 1px solid #05386b;
+  
+  }
+  #btn>a{
+    text-decoration: none;
+    color: #05386b;
+  }
+  #skills {
+    margin: auto;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    width: 60%;
+    margin-top: 30px;
+  }
+  #time > h4 {
+    font-size: 28px;
+    font-weight: bolder;
+    color: #174471;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+  }
+  #time {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin: auto;
+    text-align: center;
+    width: 90%;
+    margin-top: 30px;
+
+  }
+  #details {
+
+    width: 70%;
+    margin: auto;
+  }
+  @media all and (min-width: 340px) and (max-width: 506px){
+   
+    #time .timeline-item h5{
+      font-size: 15px;
+
+    }
+    #time .timeline-item h5 span{
+      font-size: 15px;
+    }
+  }
+  @media all and (min-width: 340px) and (max-width: 950px) {
+    .progress-bar img {
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  }
+    
+    #skills {
+      width: 90%;
+    }
+    .timeline {
+      grid-template-columns: none;
+    }
+    .timeline .timeline-item p {
+      font-size: 20px;
+      font-weight: bold;
+      color: #295e93;
+      margin-right: 52px;
+    }
+    .timeline .timeline-item h5 {
+      font-size: 20px;
+      margin-right: 52px;
+    }
+    #main > h1 {
+      font-size: 45px;
+    }
+
+    #details > h3:first-child {
+      font-size: 15px;
+    }
+    #details {
+      width: 90%;
+    }
+  }
+  #details {
+    margin-top: -600px;
+  }
+  
+  .about-stats h4 {
+    text-align: center;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #174471;
+    font-size: 27px;
+   
+  }
+  #mains {
+    margin-top: 50px;
+    
+  }
+  #main {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #174471;
+    font-size: 32px;
+    
+  }
+  #details > h3 {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #174471;
+    font-size: 20px;
+  }
+
+  .progress-bar img {
+    width: 100px;
+    margin: auto;
+    border-radius: 10px;
+  }
+    .progress-bar:first-child img{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+  }
+  .progress-bar p {
+    text-align: center;
+    color: #174471;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+ 
