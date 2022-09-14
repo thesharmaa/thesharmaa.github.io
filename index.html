@@ -256,26 +256,169 @@ width:550px;
 font-size: 20px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar span{
+  color: white;
+}
+.navbar a{
+  font-family: 'Roboto Mono', monospace;
+font-size: 35px;
+font-weight: bold;
+    color: #05386B;
+}
+.nav-item a{
+  font-family: 'Roboto Mono', monospace;
+font-size: 25px;
+font-weight: bold;
+    color: #05386B;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+.header{
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 10px 20px;
+    background-color: #5cdb94;
+}
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #05386B;
+}
+
+.nav-link:hover{
+    color:#05386B;
+}
+
+.nav-logo {
+  font-family: 'Roboto Mono', monospace;
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #05386B;
+}
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        font-weight: bold;
+        border-radius: 10px;
+        font-family: 'Roboto Mono', monospace;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+        background-color: #edf5e1;
+        height: 400px;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+}
+
     </style>
   </head>
   <body>
   
-    <div class="topnav">
-      <a href="index.html" class="active" style="color:#05386B ;font-size: 30px;">AM<span style="color:white">AN</span>
-      </a>
     
-      <div id="myLinks">
-        <a href="#top">Home</a>
-        <a href="#mains">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact-me">Contact Me</a>
-      </div>
- 
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-       
-        <i class='fa fa-bars fa-2x'></i>
-      </a>
-    </div>
+    
+    <header class="header">
+      <nav class="navbar">
+          <a href="index.html" class="nav-logo">AM<span>AN</span></a>
+          <ul class="nav-menu">
+              <li class="nav-item">
+                  <a href="#top" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#mains" class="nav-link">About Me</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#projects" class="nav-link">Projects</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#contact-me" class="nav-link">Contact Me</a>
+              </li>
+          </ul>
+          <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
+      </nav>
+</header>
     <div id="top">
       <div id="main">
         <div id="image">
@@ -547,13 +690,21 @@ font-size: 20px;
 </html>
 <script src="index.js"></script>
 <script>
-  function myFunction() {
-var x = document.getElementById("myLinks");
-if (x.style.display === "block") {
-  x.style.display = "none";
-} else {
-  x.style.display = "block";
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
 }
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
 }
 </script>
-<script src="sticky.js"></script>
