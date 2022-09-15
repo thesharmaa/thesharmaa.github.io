@@ -1,0 +1,22 @@
+.footer {
+    background-color: var(--second-color);
+    color: #fff;
+    text-align: center;
+
+    font-weight: var(--font-semi);
+    padding: 3.5rem 0;
+  }
+
+  .footer-social {
+    display: flex;
+
+    width: 30%;
+    margin: auto;
+    margin-bottom: var(--mb-4);
+  }
+  .footer-social a img{
+
+    margin: auto;
+    width: 33%;
+  }
+  
