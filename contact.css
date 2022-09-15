@@ -37,7 +37,7 @@
     margin: auto;
     text-align: center;
     margin-top: 1rem;
-    font-size: 2rem;
+    font-size: 20px;
   
     text-transform: uppercase;
 
@@ -49,6 +49,7 @@
     line-height: 2rem;
     text-align: center;
     color: #05386b;
+    font-size: 17px;
   font-family: 'Roboto Mono', monospace;
   }
   .contact-content-con .left-contact .contact-info{
@@ -205,6 +206,7 @@ width: 95%;
   .contact-item .icon span {
     color: #05386b;
     font-weight: bold;
+    font-size: 20px;
   font-family: 'Roboto Mono', monospace;
   }
   .main-btn button {

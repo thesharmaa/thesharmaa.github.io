@@ -71,16 +71,17 @@
     width: 50%;
   }
   #p1 > #image {
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
     width: 50%;
 
   }
   #p2 > #image {
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
     width: 50%;
   }
   #p1 > #image > img {
     width: 100%;
+    height: 100%;
     margin: auto;
   }
   #p2 > #image > img {
@@ -94,6 +95,9 @@ transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will 
 #p1 > #image:hover {
 transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
+
+
+
   @media all and (min-width: 767px) and (max-width: 1024px) {
     
     #p1 {
@@ -138,10 +142,78 @@ transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will 
       margin: auto;
     }
   }
+  @media all and (min-width: 1025px) and (max-width: 1399px) {
+    #p2 > #image {
+  
+      display:grid;
+      align-items: center;
+    }
+    #p1 > #image {
+    
+     display:grid;
+     align-items: center;
+    }
+    #p2 > #image > img {
+      width: 100%;
+      height: 80%;
+    
+      display:grid;
+     align-items: center;
+    }
+    #p1 > #image > img {
+        width: 100%;
+        height: 80%;
+  
+        display:grid;
+        align-items: center;
+      }
+  }
+  @media all and (min-width: 1025px) and (max-width: 1305px){
+    #p1 {
+      display: block;
+      width: 90%;
+    }
+
+    #p1 > #text {
+
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    #p1 > #image > img {
+      width: 100%;
+      height: 100%;
+    }
+    #p1 > #image {
+     
+      width: 80%;
+      margin: auto;
+    }
+    #p2 {
+      width: 90%;
+      display: block;
+      margin-bottom: 100px;
+    }
+    #p2 > #text {
+
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    #p2 > #image > img {
+      width: 100%;
+      height: 100%;
+    }
+
+    #p2 > #image {
+
+      width: 80%;
+      margin: auto;
+    }
+  }
   #text > h2,
   h3 {
     text-align: center;
     color: #05386b;
+    font-size: 25px;
     padding-top: 20px;
   font-family: 'Roboto Mono', monospace;
   }
@@ -149,6 +221,7 @@ transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will 
   h4 {
     color: #05386b;
     padding-left: 20px;
+    font-size: 20px;
   font-family: 'Roboto Mono', monospace;
   }
   #text > h4 {
@@ -192,17 +265,6 @@ margin-bottom: 60px;
     #p1 {
       display: block;
       width: 90%;
-    }
-    #nav > h3 > a {
-      font-size: 15px;
-
-      margin-top: 1;
-    }
-    #nav > h3 {
-      display: grid;
-
-      justify-content: space-between;
-      margin: auto;
     }
 
     #p1 > #text {
@@ -248,6 +310,7 @@ margin-bottom: 60px;
     margin-bottom: 40px;
   }
   }
+
   @media all and (min-width: 766px) and (max-width: 1400px){
   #text > #buttons {
     display: flex;
@@ -255,9 +318,11 @@ margin-bottom: 60px;
     margin: auto;
 
     width:90%;
-    margin-top: 40px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    /* margin-bottom: 30px; */
   }
+
+
 }
   @media all and (min-width: 490px) and (max-width: 766px) {
     #p1 {
