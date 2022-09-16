@@ -6,16 +6,21 @@
   #contact-me{
     margin-top: 140px;
     margin-bottom: 200px;
+
+ 
   }
+
   .contact-content-con {
     display: flex;
     padding-top: 3.5rem;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  
+    border-radius: 20px;
     width: 80%;
     margin:auto;
     margin-top: 30px;
+
   }
+ 
   .main-title h2 {
   
     margin: auto;
@@ -58,7 +63,8 @@
   .contact-content-con .left-contact .contact-info .contact-item {
     display: flex;
     align-items: center;
-  
+
+
     justify-content: flex-start;
   }
   .contact-content-con .left-contact .contact-info .contact-item p {
@@ -136,7 +142,9 @@
     }
   }
   @media all and (min-width: 340px) and (max-width: 1020px) {
-   
+    .contact-content-con .left-contact .contact-info .contact-item p{
+      display: block;
+    }
     .contact-content-con {
       display: block;
       padding-top: 3.5rem;
@@ -202,8 +210,10 @@ width: 95%;
     color: #05386b;
     font-weight: bold;
     font-size: 20px;
+
   font-family: 'Roboto Mono', monospace;
   }
+ 
   .main-btn button {
   
     color: #05386b;

@@ -2,7 +2,7 @@
     background-color: var(--second-color);
     color: #fff;
     text-align: center;
-
+  
     font-weight: var(--font-semi);
     padding: 3.5rem 0;
   }
@@ -14,9 +14,12 @@
     margin: auto;
     margin-bottom: var(--mb-4);
   }
+ 
   .footer-social a img{
 
     margin: auto;
-    width: 33%;
+    width: 35%;
+    height: 75%;
+    border-radius: 10px;
   }
   
