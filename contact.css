@@ -9,7 +9,15 @@
 
  
   }
+.contact-info{
 
+  height: 50%;
+
+  padding: 10px;
+}
+.contact-info .contact-item{
+  height: 20%;
+}
   .contact-content-con {
     display: flex;
     padding-top: 3.5rem;
@@ -18,7 +26,7 @@
     width: 80%;
     margin:auto;
     margin-top: 30px;
-
+   background-color: white;
   }
  
   .main-title h2 {
@@ -96,7 +104,7 @@
     padding: 0.8rem 1.1rem;
     outline: none;
     border: none;
-    background-color: rgb(252, 246, 246);
+    background-color: rgb(193, 193, 193);
     width: 100%;
     color: var(--color-white);
     resize: none;
@@ -141,14 +149,27 @@
       margin: auto;
     }
   }
-  @media all and (min-width: 340px) and (max-width: 1020px) {
+  @media all and (min-width: 340px) and (max-width: 1300px) {
     .contact-content-con .left-contact .contact-info .contact-item p{
       display: block;
     }
     .contact-content-con {
       display: block;
       padding-top: 3.5rem;
-width: 95%;
+width: 90%;
+    }
+    .main-btn button {
+  
+      margin-bottom: 20px;
+    }
+    .contact-info{
+
+      height: 30%;
+    
+      padding: 10px;
+    }
+    .contact-info .contact-item{
+      height: 20%;
     }
     .contact-content-con .left-contact .contact-info{
         margin-top: -15px;
@@ -222,6 +243,7 @@ width: 95%;
   font-family: 'Roboto Mono', monospace;
     padding: 15px 40px;
     border-radius: 10px;
+    border-color: #05386b;
   }
   .main-btn button:hover{
     font-weight: bolder;
