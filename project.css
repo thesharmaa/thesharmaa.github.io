@@ -136,7 +136,7 @@ transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will 
         align-items: center;
       }
       #text{
-        margin-top:30px
+        margin-top:20px
       }
   }
   @media all and (min-width: 1025px) and (max-width: 1305px){
