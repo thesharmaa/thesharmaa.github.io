@@ -1,86 +1,4 @@
-/* #projects{
-    border: 1px solid red;
-}
-#projects>#p1,#p2{
-    border: 1px solid red;
-    display: flex;
-    width: 70%;
-    margin: auto;
-    margin-bottom: 50px;
-}
-#p1>#text{
-    border: 1px solid red;
-  
-    width: 50%;
-}
-#p2>#text{
-    border: 1px solid red;
-    
-    width: 50%;
-}
-#p1>#image{
-    border: 1px solid red;
-    width: 50%;
-}
-#p2>#image{
-    
-    width: 50%;
-    border: 1px solid red;
-}
-#p1>#image>img{
-    width: 100%;
-    border: 1px solid red;
-}
-#p2>#image>img{
-    width: 100%;
-    border: 1px solid red;
-} */
-#p1 {
-  position: relative;
-  top: 20px;
-  display: inline-block;
-  -webkit-animation: bounce 1s ease infinite alternate;
-  font-size: 80px;
-  color: #fff;
-  /* text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
-    0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
-    0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4); */
-}
 
-
-
-/* ANIMATION */
-@-webkit-keyframes bounce {
-  100% {
-    top: -20px;
-    /* text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
-      0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,
-      0 50px 25px rgba(0, 0, 0, 0.2); */
-  }
-}
-#p2 {
-  position: relative;
-  top: 20px;
-  display: inline-block;
-  -webkit-animation: bounce 1s ease infinite alternate;
-  font-size: 80px;
-  color: #fff;
-  /* text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
-    0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
-    0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4); */
-}
-
-
-
-/* ANIMATION */
-@-webkit-keyframes bounce {
-  100% {
-    top: -20px;
-    /* text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
-      0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,
-      0 50px 25px rgba(0, 0, 0, 0.2); */
-  }
-}
 
 #projects > h1 {
     text-align: center;
@@ -216,6 +134,9 @@ transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will 
   
         display:grid;
         align-items: center;
+      }
+      #text{
+        margin-top:20px
       }
   }
   @media all and (min-width: 1025px) and (max-width: 1305px){
