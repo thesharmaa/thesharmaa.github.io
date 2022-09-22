@@ -7,12 +7,18 @@
     margin-top: 140px;
     margin-bottom: 200px;
 
- 
+
   }
+  .contact-content-con .contact-item .icon span {
+    text-align: center;
+    font-size: 16px;
+   
+  }
+
 .contact-info{
 
   height: 50%;
-
+ 
   padding: 10px;
 }
 .contact-info .contact-item{
@@ -27,10 +33,11 @@
     margin:auto;
     margin-top: 30px;
    background-color: white;
+  
   }
  
   .main-title h2 {
-  
+   
     margin: auto;
     text-align: center;
     font-size: 48px;
@@ -51,18 +58,20 @@
     text-align: center;
     margin-top: 1rem;
     font-size: 20px;
-  
+
     text-transform: uppercase;
 
     color: #05386b;
   font-family: 'Roboto Mono', monospace;
   }
+  
   .contact-content-con .left-contact p {
     margin: 1rem 0;
     line-height: 2rem;
     text-align: center;
     color: #05386b;
-    font-size: 17px;
+
+    font-size: 15px;
   font-family: 'Roboto Mono', monospace;
   }
   .contact-content-con .left-contact .contact-info{
@@ -129,13 +138,29 @@
     display: flex;
     justify-content: flex-start;
     margin-bottom: 30px;
-  }
-  @media all and (min-width: 340px) and (max-width: 500px){
+  }@media all and (min-width: 340px) and (max-width: 355px){
     .contact-content-con .contact-item .icon span {
       text-align: center;
-      font-size: 18px;
-     line-height: 40px;
+      font-size: 14px;
+     
     }
+    .contact-content-con .left-contact p{
+      font-size: 10.5px;
+      
+    }
+ 
+  }
+  @media all and (min-width: 355px) and (max-width: 550px){
+    .contact-content-con .contact-item .icon span {
+      text-align: center;
+      font-size: 14px;
+     
+    }
+    .contact-content-con .left-contact p{
+      font-size: 11px;
+      
+    }
+ 
   }
   @media all and (min-width: 501px) and (max-width:767px){
     #nav > h3>a {
@@ -230,7 +255,7 @@ width: 90%;
   .contact-item .icon span {
     color: #05386b;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
 
   font-family: 'Roboto Mono', monospace;
   }
