@@ -28,3 +28,77 @@
   margin: auto;
   border-radius: 20px;
 }
+#stats>p{
+
+ width: 33%;
+
+margin: auto;
+}
+#stats>p>img{
+  width: 100%;
+
+  margin-bottom: 20px;
+
+}
+#stats{
+  
+ display: flex;
+
+ width: 90%;
+ margin: auto;
+ margin-bottom: 50px;
+}
+@media all and (min-width: 340px) and (max-width: 500px){
+  #stats>p{
+
+    width: 80%;
+
+   margin: auto;
+   }
+   #stats>p>img{
+     width: 100%;
+   }
+   #stats{
+    display: block;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+   }
+}
+@media all and (min-width: 501px) and (max-width: 740px){
+  #stats>p{
+
+    width: 60%;
+ 
+   margin: auto;
+   }
+   #stats>p>img{
+     width: 100%;
+   }
+   #stats{
+    display: block;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+   }
+}
+@media all and (min-width: 741px) and (max-width: 1191px){
+  #stats>p{
+
+    width: 40%;
+
+   margin: auto;
+   margin-bottom: 15px;
+   }
+   #stats>p>img{
+     width: 100%;
+
+
+   }
+   #stats{
+    display: block;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+   }
+}
