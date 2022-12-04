@@ -28,6 +28,12 @@
   margin: auto;
   border-radius: 20px;
 }
+#github>h1{
+   color:#05386B;
+  font-family: 'Roboto Mono', monospace;
+  text-align:center; 
+  font-size:40px
+}
 #stats>p{
 
  width: 33%;
@@ -55,6 +61,10 @@ margin: auto;
 
    margin: auto;
    }
+   #github h1{
+    font-size: 25px;
+ 
+   }
    #stats>p>img{
      width: 100%;
    }
@@ -80,6 +90,10 @@ margin: auto;
     width: 100%;
     margin: auto;
     margin-bottom: 50px;
+   }
+   #github h1{
+    font-size: 28px;
+ 
    }
 }
 @media all and (min-width: 741px) and (max-width: 1191px){
